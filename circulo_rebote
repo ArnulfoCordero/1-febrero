@@ -1,0 +1,19 @@
+var x=25;
+var speed=4;
+
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  background(0);
+	ellipse(x,200,50,50);
+	
+	if(x>375){
+		speed=speed-4;
+	}
+	x=x+speed;
+	if (x < 25) {
+	speed = 4
+	}
+}
